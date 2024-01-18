@@ -1,0 +1,55 @@
+配列
+int array[] = new int[5]
+array[0] = 1
+array[1] = 2
+.
+.
+.
+
+
+宣言も初期化もしたい
+int array[] = {1, 2, 3, 4, 5}
+
+array.length←()はいらないよ
+
+for (int i = 0; i < array.length; i++) {
+	sum += array[i];
+}
+
+
+
+リスト
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+class risuto {
+    List<Integer> array = new ArrayList<Integer>(Arrays.asList(1, 2, 3, 4, 5));
+    int sum = 0;
+
+    for (int i = 0; i < array.size(); i++ ) {
+        sum += array.get(i);
+    }	
+
+}
+
+
+?[2] = ?
+?.add(?)
+
+[i] == get(i)
+length == size()
+
+
+
+
+配列は要素を検索する時手動でループを作らないといけない
+
+リストは要素を検索するメソッドがある
+
+
+
+
+
+
