@@ -1,6 +1,6 @@
 // 合計値はクラス変数
 import java.util.Scanner;
-class Sum1 {
+class Sum2 {
 
     // フィールド
     // インスタンスの状態を表す変数
@@ -26,7 +26,7 @@ class Sum1 {
 class problem11_2 {
     public static void main(String[] args) {
         Scanner stdIn = new Scanner(System.in);
-        Sum1 su = new Sum1();
+        Sum2 su = new Sum2();
         System.out.print(su.x + "から" + su.y + "までの合計値は");
         System.out.print(su.getSum()+"です。");
     }

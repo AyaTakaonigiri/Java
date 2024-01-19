@@ -1,25 +1,19 @@
 import java.util.Scanner;
-class Sum2 {
+class Sum1 {
 
     // フィールド
     // インスタンスの状態を表す変数
-    Scanner stdIn = new Scanner(System.in);
-    static int x;
-    static int y;
-    //コンストラクタ
-    Sum2() {
-        x = stdIn.nextInt();
-        y = stdIn.nextInt();
-    }
+    static Scanner stdIn = new Scanner(System.in);
+    static int x = stdIn.nextInt();
+    static int y = stdIn.nextInt();
 }
 
-class problem11_3 {
+class problem11_2 {
     public static void main(String[] args) {
         int sum = 0;
-        Sum2 su = new Sum2();
         // インスタンス変数をつくる
-        int num1 = Sum2.x;
-        int num2 = Sum2.y;
+        int num1 = Sum1.x;
+        int num2 = Sum1.y;
         for (int i = num1; i <= num2; i++) {
             sum += i;
         }
