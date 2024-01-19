@@ -4,8 +4,9 @@ class Sum1 {
 
     // フィールド
     // インスタンスの状態を表す変数
-    public int x = 100;
-    public int y = 200;
+    Scanner stdIn = new Scanner(System.in);
+    public int x = stdIn.nextInt();
+    public int y = stdIn.nextInt();
     private int sum;
 
 
@@ -26,8 +27,6 @@ class problem11_2 {
     public static void main(String[] args) {
         Scanner stdIn = new Scanner(System.in);
         Sum1 su = new Sum1();
-        // int num1 = stdIn.nextInt();
-        // int num2 = stdIn.nextInt();
         System.out.print(su.x + "から" + su.y + "までの合計値は");
         System.out.print(su.getSum()+"です。");
     }
