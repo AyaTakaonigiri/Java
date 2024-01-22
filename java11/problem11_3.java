@@ -1,25 +1,36 @@
+// 合計値はインスタンス変数
 import java.util.Scanner;
-class Sum1 {
+class Sum2 {
 
     // フィールド
     // インスタンスの状態を表す変数
-    static Scanner stdIn = new Scanner(System.in);
-    static int x = stdIn.nextInt();
-    static int y = stdIn.nextInt();
+    Scanner stdIn = new Scanner(System.in);
+    public int x;
+    public int y;
+    public int sum;
+    //コンストラクタ
+    Sum2() {
+        this.x = stdIn.nextInt();
+        this.y = stdIn.nextInt();
+    }
+
+    int getsum (int x, int y) {
+        for (int i = x; i <= y; i++) {
+        sum += i;
+        }
+        return (sum);
+    }
 }
 
-class problem11_2 {
+
+class problem11_3 {
     public static void main(String[] args) {
-        int sum = 0;
-        // インスタンス変数をつくる
-        int num1 = Sum1.x;
-        int num2 = Sum1.y;
-        for (int i = num1; i <= num2; i++) {
-            sum += i;
-        }
-        //インスタンス変数
-        System.out.print(num1 + "から" + num2 + "までの合計値は");
-        System.out.print(sum+"です。");
+        Scanner stdIn = new Scanner(System.in);
+        //インスタンス化
+        Sum2 su = new Sum2();
+        System.out.print(su.x + "から" + su.y + "までの合計値は");
+        
+        System.out.print(su.getsum(su.x, su.y)+"です。");
     }
 
 }
