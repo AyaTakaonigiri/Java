@@ -22,12 +22,16 @@ class MoreCalc extends Calculator {
 
     //メソッド
     public int CalcPow(int x, int y) {
-        //累乗の計算
+
+        //これを入れたらresultが二つになるため、後述のresultはthisを付けている
+        // int result = 0;
+
+        // 累乗の計算
         for (int i = 0; i < y; i++) {
-            result = result * x;
+            this.result = this.result * x;
         }
         //累乗の結果を返す
-        return result;
+        return this.result;
     }
 }
 

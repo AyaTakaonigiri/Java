@@ -21,7 +21,7 @@ class Student{
     }
 
     public double Avg(double total) {
-        return ((float)(total)/3);
+        return ((total)/3);
     }
 
 }
@@ -32,9 +32,9 @@ class problem11_7 {
     Student StuB = new Student("Bさん", "002", 80, 95, 64);
     Student StuC = new Student("Cさん", "003", 70, 80, 98);
 
-        System.err.println(StuA.studentnumber + "番 " + StuA.name + " 平均点 " + Math.floor(StuA.Avg(StuA.Sum3())*100)/100);
-        System.err.println(StuB.studentnumber + "番 " + StuB.name + " 平均点 " + Math.floor(StuB.Avg(StuB.Sum3())*100)/100);
-        System.err.println(StuC.studentnumber + "番 " + StuC.name + " 平均点 " + Math.floor(StuC.Avg(StuC.Sum3())*100)/100);
+        System.out.println(StuA.studentnumber + "番 " + StuA.name + " 平均点 " + Math.floor(StuA.Avg(StuA.Sum3())*100)/100);
+        System.out.println(StuB.studentnumber + "番 " + StuB.name + " 平均点 " + Math.floor(StuB.Avg(StuB.Sum3())*100)/100);
+        System.out.println(StuC.studentnumber + "番 " + StuC.name + " 平均点 " + Math.floor(StuC.Avg(StuC.Sum3())*100)/100);
 
     }
 

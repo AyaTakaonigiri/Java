@@ -1,3 +1,5 @@
+//別のフォルダを見てるから要改善！
+
 package java12;
 
 //スーパークラスAnimal
@@ -15,6 +17,9 @@ class Animal {
     public void move(int length) {
         System.out.println("何かがどれくらい動いたか");
     }
+    public void eat(String food) {
+        System.out.println("何が何を食べるのか");
+    }
 }
 
 class Dog extends Animal {
@@ -26,7 +31,7 @@ class Dog extends Animal {
     //スーパークラスのmoveをオーバーライドして表示させる文章を変える
     @Override
     public void move(int length) {
-        System.out.println(name + "は、" + length + "メートル走りました。");  
+        System.out.println(name + "は、" + length + "メートル走りました！");  
     }
 }
 
@@ -57,7 +62,7 @@ class Whale extends Animal {
     }
 }
 
-class problem12_3 {
+class problem12_4 {
     public static void main(String[] args) {
         //インスタンス化
         Dog DG = new Dog("犬");
