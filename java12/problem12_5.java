@@ -1,12 +1,11 @@
-
 package java12;
 
 //スーパークラスAnimal
-class Animal2 {
+class Animal3 {
     String name;
 
     //コンストラクタ
-    public Animal2(String name) {
+    public Animal3(String name) {
         this.name = name;
     }
 
@@ -21,9 +20,9 @@ class Animal2 {
     }
 }
 
-class Dog2 extends Animal2 {
+class Dog3 extends Animal3 {
     //コンストラクタ
-    public Dog2(String name) {
+    public Dog3(String name) {
         super(name);
     }
     //メソッド
@@ -39,9 +38,9 @@ class Dog2 extends Animal2 {
     }
 }
 
-class Bird2 extends Animal2 {
+class Bird3 extends Animal3 {
     //コンストラクタ
-    public Bird2(String name) {
+    public Bird3(String name) {
         super(name);
     }
     //メソッド
@@ -57,9 +56,9 @@ class Bird2 extends Animal2 {
 }
 
 
-class Whale2 extends Animal2 {
+class Whale3 extends Animal3 {
     //コンストラクタ
-    public Whale2(String name) {
+    public Whale3(String name) {
         super(name);
     }
     //メソッド
@@ -74,29 +73,55 @@ class Whale2 extends Animal2 {
     }
 }
 
-class problem12_4 {
+class Human extends Animal3 {
+    //コンストラクタ
+    public Human(String name) {
+        super(name);
+    }
+    //メソッド
+    //スーパークラスのmoveをオーバーライドして表示させる文章を変える
+    @Override
+    public void move(int length) {
+        System.out.println(name + "は、" + length + "メートル歩きました。");  
+    }
+    @Override
+    public void eat(String food) {
+        System.out.println(name + "は、" + food + "を食べました。");
+    }
+}
+
+
+
+class problem12_5 {
     public static void main(String[] args) {
         //インスタンス化
-        Dog2 DG2 = new Dog2("犬");
-        //DG2のmoveメソッド
-        DG2.move(10);
-        //DG2のeatメソッド
-        DG2.eat("お肉");
+        Dog3 DG3 = new Dog3("犬");
+        //DG3のmoveメソッド
+        DG3.move(10);
+        //DG3のeatメソッド
+        DG3.eat("お肉");
 
         //インスタンス化
-        Bird2 BD2 = new Bird2("鳥");
-        //BD2のmoveメソッド
-        BD2.move(1000);
-        //BD2のeatメソッド
-        BD2.eat("虫");
+        Bird3 BD3 = new Bird3("鳥");
+        //BD3のmoveメソッド
+        BD3.move(1000);
+        //BD3のeatメソッド
+        BD3.eat("虫");
 
 
         //インスタンス化
-        Whale2 WL2 = new Whale2("鯨");
-        //WL2のmoveメソッド
-        WL2.move(50);
-        //WL2のeatメソッド
-        WL2.eat("オキアミ");
+        Whale3 WL3 = new Whale3("鯨");
+        //WL3のmoveメソッド
+        WL3.move(50);
+        //WL3のeatメソッド
+        WL3.eat("オキアミ");
+
+        //インスタンス化
+        Human HM = new Human("人");
+        //HMのmoveメソッド
+        HM.move(300);
+        //HMのeatメソッド
+        HM.eat("昼ご飯");
     }
     
 }

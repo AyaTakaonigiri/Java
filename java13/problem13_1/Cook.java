@@ -1,4 +1,4 @@
-package java13;
+package java13.problem13_1;
 
 class Cook extends Person {
     String name;

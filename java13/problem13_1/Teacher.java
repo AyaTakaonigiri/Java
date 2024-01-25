@@ -1,4 +1,4 @@
-package java13;
+package java13.problem13_1;
 
 class Teacher extends Person {
     //フィールド
@@ -11,7 +11,7 @@ class Teacher extends Person {
         this.subject = subject;
     }
 
-    
+
     //抽象クラスPersonの抽象メソッドをオーバライドする
     
     //introduceのオーバーライド

@@ -1,4 +1,4 @@
-package java13;
+package java13.problem13_1;
 
 //抽象クラスの作成
 abstract class Person {
