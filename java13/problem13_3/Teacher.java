@@ -2,13 +2,13 @@ package java13.problem13_3;
 
 public class Teacher implements Person{
     //フィールド
-    String name;
-    String job;
-    String subject;
+    private String name;
+    private String job;
+    private String subject;
 
 
     //コンストラクタ
-    Teacher(String name, String job, String subject) {
+    public Teacher(String name, String job, String subject) {
         this.name = name;
         this.job = job;
         this.subject = subject;
