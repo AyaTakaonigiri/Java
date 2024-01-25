@@ -2,13 +2,13 @@ package java13.problem13_3;
 
 public class Cook implements Person{
     //フィールド
-    String name;
-    String job;
-    String specialties;
+    private String name;
+    private String job;
+    private String specialties;
 
 
     //コンストラクタ
-    Cook(String name, String job, String specialties) {
+    public Cook(String name, String job, String specialties) {
         this.name = name;
         this.job = job;
         this.specialties = specialties;

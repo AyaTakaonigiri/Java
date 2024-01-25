@@ -11,7 +11,7 @@ class PaperBook extends Book {
     
 
     @Override
-    void construct(String title, String auther, int price, int page) {
+    Book(String title, String auther, int price, int page) {
         System.out.println("");
     }
 
