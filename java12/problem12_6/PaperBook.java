@@ -8,11 +8,10 @@ class PaperBook extends Book {
     int id;
     
     //コンストラクタ
-    
+    Package(String title, String auther, int price, int id, int page) {
+        super(title, auther, price, id);
 
-    @Override
-    Book(String title, String auther, int price, int page) {
-        System.out.println("");
+
     }
 
 
