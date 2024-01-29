@@ -12,7 +12,7 @@ class problem14_5 {
             String str1 = stdIn.nextLine();
             System.out.print("内容２：");
             String str2 = stdIn.nextLine();
-            System.err.println();
+            System.out.println();
             str.append(str1);
             System.out.println(str.append(str2));
 
