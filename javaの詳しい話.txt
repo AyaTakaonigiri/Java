@@ -29,8 +29,14 @@ nullについて
 型変換のこと
 
 アクセス修飾子
--がprivate
-+,なしがpublic
++: public(他のクラスから参照可能)
+-: private(自クラスからのみ参照可能)
+#: protected(自クラスとサブクラスからのみ参照可能)
+
+
+Scanner stdIn = new Scanner(System.in, "SHIFT-JIS");
+
+
 
 
 

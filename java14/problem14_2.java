@@ -7,7 +7,7 @@ class problem14_2 {
         
         Scanner stdIn = new Scanner(System.in);
         System.out.print("文字列を入力");
-        String str = stdIn.next();
+        StringBuilder str = new StringBuilder(stdIn.next());
         System.out.println("入力された文字数は"+str.length()+"です。");
     }
 }
