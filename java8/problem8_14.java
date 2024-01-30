@@ -2,7 +2,7 @@ import java.util.*;//マップを使う時に使う
 class problem8_14 {
     public static void main(String[] args) {
         /* ハッシュマップをインスタンス化  */
-        Map<String, String> map = new HashMap<String, String>();
+        Map<String, String> map = new LinkedHashMap<>();
         
         /* 連想配列を作成 */
         map.put("野菜　　","季節");

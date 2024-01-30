@@ -4,6 +4,7 @@ public class Main {
     public static void main(String[] args) {
         //ポリモフィズム
         Person a[] = new Person[2];
+        
         //それぞれの配列にインスタンス化したクラスを入れる
         a[0] = new Teacher("竹井一馬", "教員", "情報処理");
         a[1] = new Cook("大原太郎", "シェフ", "オムライス");

@@ -36,6 +36,26 @@ nullについて
 
 Scanner stdIn = new Scanner(System.in, "SHIFT-JIS");
 
+if (str1.equals(str2))
+
+
+抽象クラスの作り方
+abstract class
+
+クラスのインポート
+extends
+
+
+インターフェイスの作り方
+interface
+
+インターフェイスの実装の仕方
+implements（複数可能）
+
+
+@Override
+publicを必ずつける
+
 
 
 
